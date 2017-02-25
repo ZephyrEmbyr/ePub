@@ -18,24 +18,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>GETTING STARTED WITH BRACKETS. MAGIC</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="home.css">
     </head>
     
-    <body>
+    <body> 
+         <!--
+            Jack Magee Logo
+        -->
+        <a href="jack_magee.jpg">
+            <img alt="Jack Magee Logo" src="jack_magee.jpg" style="width:500px;height:228px;"/>
+        </a>
         
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Jack Magee's ePub</a>
-            </div>
-            <ul class="nav navbar-nav">
-            </ul>
-          </div>
-        </nav>    
-        
-        <h1>GETTING STARTED WITH BRACKETS.</h1>
-        <h2>This is your guide!</h2>
-        
+         <!--
+            Ready Orders List 
+        -->
         
         <div class="card text-center">
           <div class="card-header">
@@ -46,83 +42,38 @@
             <p class="card-text">With supporting text below as a natural lead-in to additional content. <br/> <br /> I want to have my scrollable list here.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
-          <div class="card-footer text-muted">
-            2 days ago
-          </div>
         </div>
         
-        <!--
-            MADE WITH <3 AND JAVASCRIPT
-        -->
         
         <!--
-            WHAT IS BRACKETS?
+            ORDER FOOD BUTTON
         -->
         <div class="col-md-12 text-center"> 
-            <button type="button" class="btn btn-default btn-lg"> ORDER FOOD! </button>
-        </div>
-        
-        <!--
-            GET STARTED WITH YOUR OWN FILES
-        -->
-        
-        <h3>Projects in Brackets</h3>
-        <p>
-            In order to edit your own code using Brackets, you can just open the folder containing your files.
-            Brackets treats the currently open folder as a "project"; features like Code Hints, Live Preview and
-            Quick Edit only use files within the currently open folder.
-        </p>
-        
-        <samp>
-            Once you're ready to get out of this sample project and edit your own code, you can use the dropdown
-            in the left sidebar to switch folders. Right now, the dropdown says "Getting Started" - that's the
-            folder containing the file you're looking at right now. Click on the dropdown and choose "Open Folder…"
-            to open your own folder.
-            You can also use the dropdown later to switch back to folders you've opened previously, including this
-            sample project.
-        </samp>
-        
-        <!--
-            THE RELATIONSHIP BETWEEN HTML, CSS AND JAVASCRIPT
-        -->
-        
-        <samp>
-            Want to see it in action? Place your cursor on the <!-- <samp> --> tag above and press
-            <kbd>Cmd/Ctrl + E</kbd>. You should see a CSS quick editor appear above, showing the CSS rule that
-            applies to it. Quick Edit works in class and id attributes as well. You can use it with your
-            LESS and SCSS files also.
+            <div> <br/> <br/> </div>
+            <button type="button"  class="btn btn-default btn-lg" onclick="location.href = 'index.html'"> ORDER NOW </button> 
             
-            You can create new rules the same way. Click in one of the <!-- <p> --> tags above and press
-            <kbd>Cmd/Ctrl + E</kbd>. There are no rules for it right now, but you can click the New Rule
-            button to add a new rule for <!-- <p> -->.
-        </samp>
+        </div>
+    
         
-        <a href="screenshots/quick-edit.png">
-            <img alt="A screenshot showing CSS Quick Edit" src="screenshots/quick-edit.png" />
-        </a>
+    
         
         <!--
-            LET US KNOW WHAT YOU THINK
+            FOOTER
         -->
-        <h2>Get involved</h2>
-        <p>
-            Brackets is an open-source project. Web developers from around the world are contributing to build
-            a better code editor. Many more are building extensions that expand the capabilities of Brackets.
-            Let us know what you think, share your ideas or contribute directly to the project.
-        </p>
-        <ul>
-            <li><a href="http://brackets.io">Brackets.io</a></li>
-            <li><a href="http://blog.brackets.io">Brackets Team Blog</a></li>
-            <li><a href="https://github.com/adobe/brackets">Brackets on GitHub</a></li>
-            <li><a href="https://brackets-registry.aboutweb.com">Brackets Extension Registry</a></li>
-            <li><a href="https://github.com/adobe/brackets/wiki">Brackets Wiki</a></li>
-            <li><a href="https://groups.google.com/forum/#!forum/brackets-dev">Brackets Developer Mailing List</a></li>
-            <li><a href="https://twitter.com/brackets">@brackets on Twitter</a></li>
-            <li>Chat with Brackets developers on IRC in <a href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets on Freenode</a></li>
-        </ul>
-        <script src="INDEX.js">
         
-        </script>
-                
+        <!--
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+          <div class="container">
+            <p>Telephone: 207-725-3888</p>
+            <p>Store Hours</p>
+          </div>
+        </nav>
+        -->
+       
+        <div class="navbar navbar-fixed-bottom">
+            <p>Telephone: 207-725-3888</p>
+            <p>Store Hours: ...some info </p>
+        </div>
+
     </body>
 </html>
