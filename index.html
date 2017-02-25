@@ -7,6 +7,10 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script src="index.js"></script>
+<script src="menu.js"></script>
+
+
 <!DOCTYPE html>
 <html>
     <body>
@@ -23,25 +27,64 @@
         <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">This is the second checkbox</label>-->
 
         <div class="row">
-            <div class="col-sm-6">
-                <button data-toggle="collapse" data-target="#demo">Salads</button>
-                <div id="demo" class="collapse">
-                    <label>
-                        <input type="checkbox" id="cbox1" value="Salad1"> Salad 1
-                    </label><br>
-                    <input type="checkbox" id="cbox2" value="Salad2"> <label for="cbox2">Salad 2
-                    </label><br>
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary" data-target="#salad">Salads</button>
+                <div id="salad" class="collapse">
+                    <input type="checkbox" id="s1" value="sal1"> Salad 1 <br>
+                    <input type="checkbox" id="s2" value="sal2">Salad 2 <br>
                 </div>
             </div>
-            <div class="col-sm-6"><button data-toggle="collapse" data-target="#demo2">Collapsible</button>
-            <div id="demo2" class="collapse">
-            <label>
-                <input type="checkbox" id="cbox1" value="Chicken (would that make it a chickbox??)"> This is the first checkbox</label><br>
-                <input type="checkbox" id="cbox2" value="Not Chicken"> <label for="cbox2">This is the second checkbox
-            </label>
-        </div>
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#appetizer">Appetizers</button>
+                <div id="appetizer" class="collapse">
+                    <input type="checkbox" id="a1" value="app1"> Appetizer 1<br>
+                    <input type="checkbox" id="a2" value="app2"> Appetizer 2<br>
+                </div>
             </div>
         </div>
+        <br>
+            
+        <div class="row">
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#panini">Panini, Baskets, and More</button>
+                <div id="panini" class="collapse">
+                    <input type="checkbox" id="p1" value="pan1"> Salad 1 <br>
+                    <input type="checkbox" id="p2" value="pan2">Salad 2 <br>
+                </div>
+            </div>
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#sandwich">Sandwiches</button>
+                <div id="sandwich" class="collapse">
+                    <input type="checkbox" id="sw1" value="san1"> Sandwich 1<br>
+                    <input type="checkbox" id="sw2" value="san2"> Sandwich 2<br>
+                </div>
+            </div>
+        </div>
+        <br>
+            
+        <div class="row">
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#burrito">Burritos and Wraps</button>
+                <div id="burrito" class="collapse">
+                    <input type="checkbox" id="b1" value="bur1"> Burrito 1 <br>
+                    <input type="checkbox" id="b2" value="bur2"> Burrito 2 <br>
+                </div>
+            </div>
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#side">Side Orders</button>
+                <div id="side" class="collapse">
+                    <input type="checkbox" id="si1" value="sid1"> Side 1<br>
+                    <input type="checkbox" id="si2" value="sid2"> Side 2<br>
+                </div>
+            </div>
+        </div>
+        <br>
+			
+			
+			<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
         
         
 
@@ -49,8 +92,8 @@
         
         
                 
-        <div class= "container">
-        <button type="button" class="btn btn-default" onclick="location.href='confirmation.html'">Go to confirmation </button>
+        <div class= "container" align= "center">
+        <button type="button" class="btn btn-default" onclick="readData(); location.href='confirmation.html'">Go to confirmation </button>
         </div>
         
         
