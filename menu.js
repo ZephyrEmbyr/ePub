@@ -77,8 +77,51 @@ function getItem(index){
 	console.log(menu[index].name);
 }
 
-$("#wow").click(makeOrder);
 
+// Change page logic
+function changePage(page){
+    navActive(page); //change color of button in nav bar
+    
+    if(page == 'home'){
+        document.getElementById('home').style.display = "block";
+        document.getElementById('menu').style.display = "none";
+        document.getElementById('confirmation').style.display = "none";
+        document.getElementById('about').style.display = "none";
+    }else if(page == 'menu'){
+        document.getElementById('home').style.display = "none";
+        document.getElementById('menu').style.display = "block";
+        document.getElementById('confirmation').style.display = "none";
+        document.getElementById('about').style.display = "none";
+    }else if(page == 'confirmation'){
+        document.getElementById('home').style.display = "none";
+        document.getElementById('menu').style.display = "none";
+        document.getElementById('confirmation').style.display = "block";
+        document.getElementById('about').style.display = "none";
+    }else if(page == 'about'){
+        document.getElementById('home').style.display = "none";
+        document.getElementById('menu').style.display = "none";
+        document.getElementById('confirmation').style.display = "none";
+        document.getElementById('about').style.display = "block";
+    }
+}
+
+// Change page logic
+function navActive(page){
+    var navBar = document.getElementById('navigationBar').getElementsByTagName('li');
+    
+    for(i=0; i<navBar.length; i++) {
+        var a = navBar[i].innerText;
+        if(navBar[i].innerText.toLocaleLowerCase() == page) {
+            navBar[i].classList.add("active");
+        } else {
+            navBar[i].classList.remove("active");
+        }
+    }
+    
+}
+
+
+$("#wow").click(makeOrder);
 
 function makeOrder(){
     alert("wow reacts only");
@@ -93,14 +136,12 @@ function makeOrder(){
 //	}
     
     $('input[type=checkbox]').each(function () {
-        console.log(this.id)
+        console.log(this.id);
     });
-//	var order = {items: stuff, name: "", bowdoinID: ""};
-
-    location.href='confirmation.html';
+                                   
+    changePage('confirmation');
 }
 
-$('#heck').click(storeInput);
   
 
 

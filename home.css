@@ -1,7 +1,10 @@
 html {
-    background: #e6e9e9;
-    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    background-color: black;
+    /*background: #e6e9e9;*/
     -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+    hieght:100%;
+    position: relative;
 }
 
 body {
@@ -12,8 +15,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
+    margin-bottom: 60px;
     max-width: 20000px;
     min-height: 100%;
+    height: 100%;
     padding: 1em 2em 1em;
 }
 
@@ -23,6 +28,10 @@ body {
 }
 
 #menu {
+    display: none;
+}
+
+#confirmation {
     display: none;
 }
 
@@ -72,12 +81,26 @@ p {
     margin: 0;
 }
 
+/*
 .footer{
-    margin-top: 5px;
+    bottom: 0;
+    margin-top: 3em;
     text-align: center;
     font-size: 14px;
 }
+*/
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: black;
+  color: grey;
+  font: 14px;
+  text-align: center;
+}
 
 @keyframes colorize {
     0% {
