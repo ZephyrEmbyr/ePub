@@ -70,7 +70,7 @@
         {type: "si10", name: "Guacamole", price: 1.50}
         
     ];  
-}
+
 
 function getItem(index){
 	return menu[index].name;
