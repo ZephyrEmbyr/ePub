@@ -1,4 +1,5 @@
 
+
     var menu = [
         {type: "a1", name:  "Small Garlic-Herb Breadsticks with Marinara Sauce", price:  2.25}, 
         {type: "a2", name: "Large Garlic-Herb Breadsticks with Marinara Sauce", price: 3.75}, 
@@ -68,7 +69,9 @@
         {type: "si9", name: "Large Sweet Potato Fries", price: 2.95},
         {type: "si10", name: "Guacamole", price: 1.50}
         
-    ];
+    ];  
+}
+
 function getItem(index){
 	return menu[index].name;
 	console.log(menu[index].name);
