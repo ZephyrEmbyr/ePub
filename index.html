@@ -7,6 +7,9 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script src="menu.js"></script>
+
+
 <!DOCTYPE html>
 <html>
     <body>
@@ -21,27 +24,118 @@
     <!--<label><input type="checkbox" id="cbox1" value="first_checkbox"> This is the first checkbox</label><br>
 
         <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">This is the second checkbox</label>-->
-
+			
+			
+	<script src = menu.js></script>
         <div class="row">
-            <div class="col-sm-6">
-                <button data-toggle="collapse" data-target="#demo">Salads</button>
-                <div id="demo" class="collapse">
-                    <label>
-                        <input type="checkbox" id="cbox1" value="Salad1"> Salad 1
-                    </label><br>
-                    <input type="checkbox" id="cbox2" value="Salad2"> <label for="cbox2">Salad 2
-                    </label><br>
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary" data-target="#salad">Salads</button>
+                <div id="salad" class="collapse" align= "left">
+                    <input type="checkbox" id="s1" value="sal1"> Kale Salad <br>
+                    <input type="checkbox" id="s2" value="sal2"> Cobb Salad <br>
+					<input type="checkbox" id="s3" value="sal3"> Small Magee's Garden Salad <br>
+					<input type="checkbox" id="s4" value="sal4"> Large Magee's Garden Salad <br>
+					<input type="checkbox" id="s5" value="sal5"> Small Jack's Caesar Salad <br>
+					<input type="checkbox" id="s6" value="sal6"> Large Jack's Caesar Salad <br>
+					<input type="checkbox" id="s7" value="sal7"> Mandarin Almond Salad <br>
+					<input type="checkbox" id="s8" value="sal8"> Greek Salad with Hummus <br>
                 </div>
             </div>
-            <div class="col-sm-6"><button data-toggle="collapse" data-target="#demo2">Collapsible</button>
-            <div id="demo2" class="collapse">
-            <label>
-                <input type="checkbox" id="cbox1" value="Chicken (would that make it a chickbox??)"> This is the first checkbox</label><br>
-                <input type="checkbox" id="cbox2" value="Not Chicken"> <label for="cbox2">This is the second checkbox
-            </label>
-        </div>
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#appetizer">Appetizers</button>
+                <div id="appetizer" class="collapse" align= "left">
+                    <input type="checkbox" id="a1" value="app1"> Small Garlic-Herb Breadsticks with Marinara Sauce<br>
+                    <input type="checkbox" id="a2" value="app2"> Large Garlic-Herb Breadsticks with Marinara Sauce<br>
+					<input type="checkbox" id="a3" value="app3"> Small Cheese Breadsticks with Marinara Sauce<br>
+                    <input type="checkbox" id="a4" value="app4"> Large Cheese Breadsticks with Marinara Sauce<br>
+					<input type="checkbox" id="a5" value="app5"> Fried Pickles with Chipotle Mayo<br>
+                    <input type="checkbox" id="a6" value="app6"> Fried Veggie Eggrolls with Sweet and Sour Dipping Sauce<br>
+					<input type="checkbox" id="a7" value="app7"> Hummus and Pita with Veggies<br>
+                    <input type="checkbox" id="a8" value="app8"> Mozzarella Sticks<br>
+					<input type="checkbox" id="a9" value="app9"> Tortilla Chips and Salsa<br>
+                    <input type="checkbox" id="a10" value="app10"> Two Soft Pretzels<br>
+					<input type="checkbox" id="a11" value="app11"> Plain Chicken Fingers<br>
+                    <input type="checkbox" id="a12" value="app12"> Buffalo Chicken Fingers<br>
+					<input type="checkbox" id="a13" value="app13"> Buffalo Chicken Wings<br>
+                    <input type="checkbox" id="a14" value="app14"> BBQ Chicken Wings<br>
+					<input type="checkbox" id="a15" value="app15"> Honey Mustard Chicken Wings<br>
+                    <input type="checkbox" id="a16" value="app16"> Monterey Jack Cheese Quesadilla<br>
+					<input type="checkbox" id="a17" value="app17"> Monterey Jack Veggie Quesadilla<br>
+                    <input type="checkbox" id="a18" value="app18"> Monterey Jack Chicken Quesadilla<br>
+                </div>
             </div>
         </div>
+        <br>
+            
+        <div class="row">
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#panini">Panini, Baskets, and More</button>
+                <div id="panini" class="collapse" align= "left">
+                    <input type="checkbox" id="p1" value="pan1"> Chicken Pesto Panino <br>
+                    <input type="checkbox" id="p2" value="pan2"> Portobello and Goat Cheese Panino <br>
+					<input type="checkbox" id="p3" value="pan3"> Homemade Meatloaf and Cheddar Panino <br>
+					<input type="checkbox" id="p4" value="pan4"> Chicken Finger Basket with French fries <br>
+					<input type="checkbox" id="p5" value="pan5"> Quinoa Chili served with a small garden salad <br>
+                </div>
+            </div>
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#sandwich">Sandwiches</button>
+                <div id="sandwich" class="collapse" align= "left">
+                    <input type="checkbox" id="sw1" value="san1"> Jack’s Deli Sandwich<br>
+					<input type="checkbox" id="sw2" value="san2"> Jack’s Double-Decker Turkey Club<br>
+					<input type="checkbox" id="sw3" value="san3"> BLT Sandwich<br>
+					<input type="checkbox" id="sw4" value="san4"> Italian Sub<br>
+					<input type="checkbox" id="sw5" value="san5"> Veggie Flatbread<br>
+					<input type="checkbox" id="sw6" value="san6"> Hamburger<br>
+					<input type="checkbox" id="sw7" value="san7"> Cheeseburger<br>
+					<input type="checkbox" id="sw8" value="san8"> Turkey Burger<br>
+					<input type="checkbox" id="sw9" value="san9"> Polar Bear Burger<br>
+					<input type="checkbox" id="sw10" value="san10"> Smoke Hourse Burger<br>
+					<input type="checkbox" id="sw11" value="san11"> Blue Mango Garden Burger<br>
+					<input type="checkbox" id="sw12" value="san12"> Shaved Philly Steak and Cheese<br>
+					<input type="checkbox" id="sw13" value="san13"> Flat Top Falafel with Tzatziki Sauce<br>
+					<input type="checkbox" id="sw14" value="san14"> Chicken Parmesan Sandwich<br>
+					<input type="checkbox" id="sw15" value="san15"> Classic Grilled Cheese Sandwich<br>
+                </div>
+            </div>
+        </div>
+        <br>
+            
+        <div class="row">
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#burrito">Burritos and Wraps</button>
+                <div id="burrito" class="collapse" align= "left">
+                    <input type="checkbox" id="b1" value="bur1"> Fish Taco <br>
+                    <input type="checkbox" id="b2" value="bur2"> Burrito “El Grande” <br>
+					<input type="checkbox" id="b3" value="bur3"> Chicken Caesar Wrap <br>
+					<input type="checkbox" id="b4" value="bur4"> Vegetarian Caesar Salad Wrap(V) <br>
+					<input type="checkbox" id="b5" value="bur5"> Buffalo Chicken and Blue Cheese Wrap <br>
+					<input type="checkbox" id="b6" value="bur6"> Cobb Salad Wrap <br>
+                </div>
+            </div>
+            <div class="col-sm-6" align= "center">
+                <button data-toggle="collapse" class="btn btn-primary"  data-target="#side">Side Orders</button>
+                <div id="side" class="collapse" align= "left">
+                    <input type="checkbox" id="si1" value="sid1"> Cobb Salad Wrap<br>
+                    <input type="checkbox" id="si2" value="sid2"> Small French Fries<br>
+					<input type="checkbox" id="si3" value="sid3"> Large French Fries<br>
+					<input type="checkbox" id="si4" value="sid4"> Small Fajita Fries<br>
+					<input type="checkbox" id="si5" value="sid5"> Large Fajita Fries<br>
+					<input type="checkbox" id="si6" value="sid6"> Small Onion Rings<br>
+					<input type="checkbox" id="si7" value="sid7"> Large Onion Rings<br>
+					<input type="checkbox" id="si8" value="sid8"> Small Sweet Potato Fries<br>
+					<input type="checkbox" id="si9" value="sid9"> Large Sweet Potato Fries<br>
+					<input type="checkbox" id="si10" value="sid10"> Guacamole<br>
+                </div>
+            </div>
+        </div>
+        <br>
+			
+			
+			<div class="form-group">
+  <label for="comment">Special Instruction:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
         
         
 
@@ -49,7 +143,7 @@
         
         
                 
-        <div class= "container">
+        <div class= "container" align= "center">
         <button type="button" class="btn btn-default" onclick="location.href='confirmation.html'">Go to confirmation </button>
         </div>
         
