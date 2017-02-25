@@ -1,8 +1,5 @@
-<script src="https://ajaxgoogleapis/com/ajaxlibs/jquery/3.1.1/jquery.min.js"></script>
-<script src="menu.js"></script>
-var menu=[],
-
 function createMenu() {
+var menu=[],
 
     var menu = [
         {type: app, name:  "Small Garlic-Herb Breadsticks with Marinara Sauce", price:  2.25}, 
@@ -40,6 +37,22 @@ function createMenu() {
         {type: panini, name: "Chicken Finger Basket with French fries", price: 6.50}, 
         {type: panini, name: "Quinoa Chili served with a small garden salad", price: 6.25},
         
+        {type: sandwich, name: "Jack’s Deli Sandwich", price: 5.50},
+        {type: sandwich, name: "Jack’s Double-Decker Turkey Club", price: 5.75},
+        {type: sandwich, name: "BLT Sandwich", price: 4.25},
+        {type: sandwich, name: "Italian Sub", price: 5.95},
+        {type: sandwich, name: "Veggie Flatbread", price: 5.50},
+        {type: sandwich, name: "Hamburger", price: 4.00},
+        {type: sandwich, name: "Cheeseburger", price: 4.75},
+        {type: sandwich, name: "Turkey Burger", price: 4.75},
+        {type: sandwich, name: "Polar Bear Burger", price: 5.75},
+        {type: sandwich, name: "Smoke House Burger", price: 5.95},
+        {type: sandwich, name: "Blue Mango Garden Burger", price: 5.50},
+        {type: sandwich, name: "Shaved Philly Steak & Cheese", price: 5.75},
+        {type: sandwich, name: "Flat Top Falafel with Tzatziki Sauce", price: 4.75},
+        {type: sandwich, name: "Chicken Parmesan Sandwich", price: 4.75},
+        {type: sandwich, name: "Classic Grilled Cheese Sandwich", price: 3.00},
+        
         {type: burrWrap, name: "Fish Taco", price: 5.95},
         {type: burrWrap, name: "Burrito “El Grande”", price: 5.95},
         {type: burrWrap, name: "Chicken Caesar Wrap", price: 5.25},
@@ -58,5 +71,39 @@ function createMenu() {
         {type: side, name: "Large Sweet Potato Fries", price: 2.95},
         {type: side, name: "Guacomole", price: 1.50}
         
-    ];
+    ];  
+}
+
+function getItem(index){
+	return menu[index].name;
+}
+
+function readData(){
+	
+}
+
+$(#'confirm').click(storeInput);
+
+<!--Saves user input into a string object-->
+function storeInput(){
+    var txtName = document.getElementById("txtname");
+    var txtBowId = document.getElementById("txtBowId");
+    var bowId = txtBowId.value;
+    var name = txtName.value;
+    editObject(name, bowId);
+  } // end storeName
+
+function editObject(name, id)
+    {
+        order.addName(name);
+        order.addId(id);
+    }
+
+
+function addName(x){
+    object.name=x;
+}
+
+function addId(y){
+    object.Id=y;
 }
