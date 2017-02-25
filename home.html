@@ -22,62 +22,102 @@
     </head>
     
     <body> 
-         <!--
-            Jack Magee Logo
+        
+        <!--
+            NAVIGATION BAR
         -->
-        <a>
-            <img alt="Jack Magee Logo" src="jack_magee.jpg" style="width:100%;height:228px;"/>
-        </a>
-        
-        
-         <!--
-            ORDER FOOD BUTTON
-        -->
-        <div> 
-            <div> <br/> </div>
-            <button type="button"  class="btn btn-default btn-lg" onclick="location.href = 'index.html'" style="display:block; line-height: 40px; width:40%; text-align:center; margin:0 auto;"> ORDER NOW </button> 
-            <div> <br/> <br/> </div>
-        </div>
-
-        
-         <!--
-            Ready Orders List 
-        -->
-        
-        <div class="container">
-          <div class="row">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4>
-                    Please come and pick up your order! 
-                  </h4>
-                </div>
-                <table class="table table-fixed">
-                  <thead>
-                    <tr>
-                      <th class="col-xs-2">#</th>
-                      <th class="col-xs-4">Name</th>
-                      <th class="col-xs-6">Order Summary</th>
-                    </tr>
-                  </thead>
-                  <tbody id="orderList" class="">
-                    
-                  </tbody>
-                </table>
-              </div>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a onclick="changePage('home')">Home</a></li>
+              <li><a onclick="changePage('menu')">Menu</a></li>
+              <li><a onclick="changePage('about')">About us</a></li>
+            </ul>
           </div>
-        </div>
-    
+        </nav> <!--end nav bar-->
         
+        
+        <div id= "home">
+            <!--logo-->
+            <a>
+                <img alt="Jack Magee Logo" src="jack_magee.jpg" style="width:100%;height:228px;"/>
+            </a>
+            <!--make order-->
+            <div> 
+                <div> <br/> </div>
+                <button type="button"  class="btn btn-default btn-lg" onclick="location.href = 'index.html'" style="display:block; line-height: 40px; width:40%; text-align:center; margin:0 auto;"> ORDER NOW </button> 
+                <div> <br/> <br/> </div>
+            </div>
+             <!-- Ready Orders List -->
+            <div class="container">
+              <div class="row">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4>
+                        Please come and pick up your order! 
+                      </h4>
+                    </div>
+                    <table class="table table-fixed">
+                      <thead>
+                        <tr>
+                          <th class="col-xs-2">#</th>
+                          <th class="col-xs-4">Name</th>
+                          <th class="col-xs-6">Order Summary</th>
+                        </tr>
+                      </thead>
+                      <tbody id="orderList" class="">
+
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+            </div>
+        </div> <!-- end of home page-->
+        
+        
+        <div id = "menu">
+            <p>menu</p>
+        </div> <!--end of menu page-->
+        
+        
+        
+        <div id = "about">
+            <p>about_us page</p>
+        </div> <!--end of about us page-->
+            
+            
         <!--
             FOOTER
         -->
-        
         <div class="footer">
             <p> Telephone: 207-725-3888 </p> 
             <p> Store Hours: Mon - Wed 11:30 a.m. - midnight, Thurs 11:30am - 1:00am, Fri 11:30am - 7:00pm, Sat Closed, Sun 6:30pm - midnight</p>
         </div>
 
+        
+        <!-- 
+            Change page logic
+        -->
+        <script type="text/javascript">
+            function changePage(page){
+                if(page == 'home'){
+                    document.getElementById('home').style.display = "block";
+                    document.getElementById('menu').style.display = "none";
+                    document.getElementById('about').style.display = "none";
+                }else if(page == 'menu'){
+                    document.getElementById('home').style.display = "none";
+                    document.getElementById('menu').style.display = "block";
+                    document.getElementById('about').style.display = "none";
+                }else if(page == 'about'){
+                    document.getElementById('home').style.display = "none";
+                    document.getElementById('menu').style.display = "none";
+                    document.getElementById('about').style.display = "block";
+                }
+            }
+        </script>
+        
         
         <script>
             var orders = [ 
@@ -101,5 +141,6 @@
                 `);
             });
         </script>
+        
     </body>
 </html>
