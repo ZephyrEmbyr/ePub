@@ -23,5 +23,13 @@ function addName(x){
 }
 
 function addId(y){
-    object.Id=y;
+    object.id=y;
+}
+
+function createOrder() {
+    var order = [
+        name = "";
+        id = "";
+        items[];
+    ]
 }

@@ -2,7 +2,7 @@
 <script src="menu.js"></script>
 var menu=[],
 
-function createMenu() {}
+function createMenu() {
 
     var menu = [
         {type: app, name:  "Small Garlic-Herb Breadsticks with Marinara Sauce", price:  2.25}, 
