@@ -1,8 +1,5 @@
-<script src="https://ajaxgoogleapis/com/ajaxlibs/jquery/3.1.1/jquery.min.js"></script>
-<script src="menu.js"></script>
-var menu=[],
 
-function createMenu() {}
+var menu=[],
 
     var menu = [
         {type: app, name:  "Small Garlic-Herb Breadsticks with Marinara Sauce", price:  2.25}, 
@@ -75,4 +72,36 @@ function createMenu() {}
         {type: side, name: "Guacomole", price: 1.50}
         
     ];
+function getItem(index){
+	return menu[index].name;
+}
+
+function readData(){
+	
+}
+
+$(#'confirm').click(storeInput);
+
+<!--Saves user input into a string object-->
+function storeInput(){
+    var txtName = document.getElementById("txtname");
+    var txtBowId = document.getElementById("txtBowId");
+    var bowId = txtBowId.value;
+    var name = txtName.value;
+    editObject(name, bowId);
+  } // end storeName
+
+function editObject(name, id)
+    {
+        order.addName(name);
+        order.addId(id);
+    }
+
+
+function addName(x){
+    object.name=x;
+}
+
+function addId(y){
+    object.Id=y;
 }
