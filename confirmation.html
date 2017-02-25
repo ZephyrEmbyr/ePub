@@ -1,11 +1,23 @@
 <!DOCTYPE html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
 <html>
     
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GETTING STARTED WITH BRACKETS</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <title>Order Confirmation Page</title>
+        <meta name="description" content="A page to confirm your order with Jack Magee's Pub.">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -18,25 +30,35 @@
     
             MADE WITH <3 AND JAVASCRIPT
         -->
+        <form class="well span9">
+        <div class="row">
+            <div class="span3">
+                <label>What's your name?</label>
+                <input type="text" class="span3" placeholder="">
+            </div>
+            <div class="span3">
+                <label>What's your Bowdoin ID?</label>
+                <input type="text" class="span3" placeholder="">
+            </div>
+            <div class="span3">
+                <label>Here's your order summary:</label>
+            </div>
+            <div class="span3">
+                <label>Total price:</label>
+            </div>
+
+        </form>
         
-        <p>
-            What's your name?
-        </p>
-        
-        <p>
-            What's your Bowdoin ID?
-        </p>
-        
-        <p>
-            Here's your item summary:
-        </p>
-        
-        <p>
-            Total price:
-        </p>
-        
-        <p>
+        <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
             Confirm your order
-        </p>
+        </button>
+
+        <script>
+            $('#myButton').on('click', function () {
+                var $btn = $(this).button('loading')
+                // business logic...
+                $btn.button('reset')
+            })
+        </script>
     </body>
 </html>
