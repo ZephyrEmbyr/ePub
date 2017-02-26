@@ -28,6 +28,7 @@ body {
 h1 {
     font-size: 36px;
     color: black;
+    font-family: "courier new", monospace;
 }
 
 #home {
@@ -54,6 +55,7 @@ h1 {
   border: 1px solid grey;
   box-shadow:none;
   font-weight: bold;
+  font-family: "curier new", monospace;
 }
 
 .row {
