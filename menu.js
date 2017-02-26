@@ -1,6 +1,7 @@
 
 
 	var stuff = [];
+	var orders = [];
     var menu = [
         {type: "a1", name:  "Small Garlic-Herb Breadsticks with Marinara Sauce", price:  2.25}, 
         {type: "a2", name: "Large Garlic-Herb Breadsticks with Marinara Sauce", price: 3.75}, 
@@ -149,7 +150,7 @@ function makeOrder(){
     $('input[type=checkbox]').each(function () {
         if ($(this).is(':checked'))
 			{
-				stuff.push(checker[k]);
+				stuff.push(this);
 			}
     });
 	
@@ -164,6 +165,10 @@ function storeInput(order){
     var txtBowId = document.getElementById("txtBowId");
     var bowId = txtBowId.value;
     var name = txtName.value;
+	var newOrder = {Name: name, ID: bowId, Items: stuff};
+	orders.push(newOrder);
+	
+	changePange('home');
     
   } // end storeName
 
