@@ -1,6 +1,5 @@
 html {
-    background-color: black;
-    /*background: #e6e9e9;*/
+    /*background-color: black;*/
     -webkit-font-smoothing: antialiased;
     min-height: 100%;
     hieght:100%;
@@ -8,7 +7,11 @@ html {
 }
 
 body {
-    background-color: black;
+    /*background-color: black;*/
+    background-image: url("burger.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -19,7 +22,7 @@ body {
     max-width: 20000px;
     min-height: 100%;
     height: 100%;
-    padding: 1em 2em 1em;
+    /*padding: 1em 2em 1em;*/
 }
 
 
@@ -37,6 +40,14 @@ body {
 
 #about {
     display: none;
+}
+
+#btn_transparent {
+  background-color: transparent;
+  border-color: #ccc;
+  background:none;
+  border:black;
+  box-shadow:none;
 }
 
 a {

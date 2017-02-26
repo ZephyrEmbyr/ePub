@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,9 +31,9 @@
             <div class="navbar-header">
             </div>
             <ul class="nav navbar-nav" id="navigationBar">
-              <li class="active"><a onclick="changePage('home')">Home</a></li>
-              <li><a onclick="changePage('menu')">Menu</a></li>
-              <li><a onclick="changePage('about')">About us</a></li>
+              <li class="active"><a onclick="changePage('home')">HOME</a></li>
+              <li><a onclick="changePage('menu')">MENU</a></li>
+              <li><a onclick="changePage('about')">ABOUT US</a></li>
             </ul>
           </div>
         </nav> <!--end nav bar-->
@@ -43,13 +41,15 @@
         
         <div id="home">
             <!--logo-->
+            <!--
             <a>
                 <img alt="Jack Magee Logo" src="jack_magee.jpg" style="width:100%;height:228px;"/>
             </a>
+            -->
             <!--make order-->
             <div> 
                 <div> <br/> </div>
-                <button type="button"  class="btn btn-default btn-lg" onclick="changePage('menu')" style="display:block; line-height: 40px; width:40%; text-align:center; margin:0 auto;"> ORDER NOW </button> 
+                <button type="button"  class="btn btn-default btn-lg" id="btn_transparent" onclick="changePage('menu')" style="display:block; line-height: 40px; width:40%; text-align:center; margin:0 auto;"> ORDER NOW </button> 
                 <div> <br/> <br/> </div>
             </div>
              <!-- Ready Orders List -->
