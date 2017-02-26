@@ -1,4 +1,5 @@
 html {
+<<<<<<< HEAD
    background-color: black;
    /*background: #e6e9e9 ;*/
    -webkit-font-smoothing: antialiased;
@@ -7,23 +8,26 @@ html {
    position: relative;
 }
 
+
 body {
-   background-color: black;
-   box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-   color: #545454 ;
-   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-   font-size: 16px;
-   line-height: 1.5;
-   margin: 0 auto;
-   margin-bottom: 60px;
-   max-width: 20000px;
-   min-height: 100%;
-   height: 100%;
-   padding: 1em 2em 1em;
+    background-color: black;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 20000px;
+    min-height: 100%;
+    height: 100%;
+    padding: 1em 2em 1em;
+>>>>>>> NanBranch
 }
 
 
 a {
+<<<<<<< HEAD
    color: #0083e8 ;
 }
 
@@ -63,18 +67,67 @@ img {
 
 p {
    margin: 0;
+=======
+    color: #0083e8;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 0 solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+p {
+    margin: 0;
+>>>>>>> NanBranch
 }
 
 /*
 .footer{
+<<<<<<< HEAD
    bottom: 0;
    margin-top: 3em;
    text-align: center;
    font-size: 14px;
+=======
+    bottom: 0;
+    margin-top: 3em;
+    text-align: center;
+    font-size: 14px;
+>>>>>>> NanBranch
 }
 */
 
 .footer {
+<<<<<<< HEAD
  position: absolute;
  bottom: 0;
  width: 100%;
@@ -95,4 +148,26 @@ p {
        -webkit-filter: grayscale(0%);
        filter: grayscale(0%);
    }
+=======
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: black;
+  color: grey;
+  font: 14px;
+  text-align: center;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+>>>>>>> NanBranch
 }
