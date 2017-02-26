@@ -25,6 +25,10 @@ body {
     /*padding: 1em 2em 1em;*/
 }
 
+h1 {
+    font-size: 36px;
+    color: black;
+}
 
 #home {
     display: block; 
@@ -42,9 +46,31 @@ body {
     display: none;
 }
 
+#submenu-header{
+  width: 100%;
+  opacity: 0.85;
+  backgroud-color: white;
+  border-color: #ccc;
+  border: 1px solid grey;
+  box-shadow:none;
+  font-weight: bold;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.panel-heading {
+  border: 1px solid grey;  
+}
+
+.table{
+  border: 1px solid grey;
+}
+
 #btn_transparent {
   opacity: 0.7;
-  /*background-color: transparent;*/
   backgroud-color: white;
   border-color: #ccc;
   border: 2px solid grey;

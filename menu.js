@@ -105,6 +105,9 @@ function changePage(page){
     }
 }
 
+//TODO: THIS DOESN'T DO ANYTHING RIGHT NOW
+//  want to be able to color the current page button grey.. if class="active" then
+//  bootstrap will color appropriate button grey
 // Change page logic
 function navActive(page){
     var navBar = document.getElementById('navigationBar').getElementsByTagName('li');
