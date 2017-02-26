@@ -26,12 +26,6 @@ body {
     /*padding: 1em 2em 1em;*/
 }
 
-h1 {
-    font-size: 36px;
-    color: black;
-    font-family: "courier new", monospace;
-}
-
 #home {
     display: block; 
 }
@@ -154,8 +148,26 @@ img {
   border-bottom-width: 0;
 }
 
+#about{
+    opacity: 0.85;
+    background-color: white;
+}
+
+h1 {
+    color: black;
+    font-family: "courier new", monospace;
+}
+
+h3 {
+    font-size: 36px;
+    color: black;
+    font-family: "courier new", monospace;
+}
+
+
 p {
     margin: 0;
+    color: black;
 }
 .box {
     padding: 10px;
