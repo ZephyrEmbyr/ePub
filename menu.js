@@ -138,15 +138,7 @@ $("#wow").click(makeOrder);
 
 function makeOrder(){
 	stuff = [];
-//    var checker = [a1, a2, a3, a4, a5, a6];
-//	for(var k; k < checker.length; k++)
-//	{
-//		if ($('#checker[k]').is(":checked"))
-//			{
-//				stuff.push(checker[k]);
-//			}
-//	}
-    
+
     $('input[type=checkbox]').each(function () {
         if ($(this).is(':checked'))
 			{
