@@ -226,7 +226,7 @@
                     <input type="text" class="span3" placeholder="" id="txtBowId">
                 </div>
                 <div class="span3">
-                    <label>Here's your order summary:</label>
+                    <label>Here's your order summary: <br><br> </label>
                 </div>
                 <div class="span3">
                     <label>Total price:</label>
@@ -236,7 +236,7 @@
             </form>
 
                 <div class= "container" align= "center">
-            <button type="button" class="btn btn-default" id="finalconfirm">Submit your order! </button>
+            <button type="button" class="btn btn-primary" id="finalconfirm">CONFIRM ORDER! </button>
             </div>
         </div> <!--end of confirmation page-->
         
@@ -257,6 +257,17 @@
         <script src="menu.js"></script>
         
         <script>
+            var orders = [
+               { time: "20:23:31", id: "B8023", name: "Tom", order: "Chicken Tender", price: ""},
+               { time: "20:30:09", id: "B9385", name: "Alice", order: "Salad", price: ""},
+               { time: "20:31:47", id: "B7163", name: "Kevin", order: "Burger", price: ""},
+               { time: "20:40:03", id: "B7213", name: "Alice", order: "Fish Taco", price: ""},
+               { time: "20:41:02", id: "B9470", name: "John", order: "Salad", price: ""},
+               { time: "20:42:30", id: "B7004", name: "Darius", order: "Sandwich", price: ""},
+               { time: "20:47:50", id: "B8310", name: "Tim", order: "Salad", price: ""},
+               { time: "20:55:34", id: "B9101", name: "Joy", order: "Burger", price: ""}
+           ];
+            
             orders.forEach(function(item) {
                 $('#orderList').append(`
                     <tr>
