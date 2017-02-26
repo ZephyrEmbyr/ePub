@@ -134,9 +134,10 @@ function navActive(page){
 }
 
 
-$("#wow").click(makeOrder);
+$("#confirmation_one").click(makeOrder);
 
 function makeOrder(){
+    /*
 	stuff = [];
 
     $('input[type=checkbox]').each(function () {
@@ -145,24 +146,23 @@ function makeOrder(){
 				stuff.push(menu.type=$(this).attr('id'));
 			}
     });
-	
+	*/
 	changePage('confirmation');
-	
 }
 
   
 $("#finalconfirm").click(storeInput);
 
 <!--Saves user input into a string object-->
-function storeInput(order){
-    var txtName = document.getElementById("txtname");
+function storeInput(){
+    var txtName = document.getElementById("txtName");
     var txtBowId = document.getElementById("txtBowId");
     var bowId = txtBowId.value;
     var name = txtName.value;
 	var newOrder = {Name: name, ID: bowId, Items: stuff};
 	orders.push(newOrder);
 	
-	changePange('home');
+	changePage('home');
     
   } // end storeName
 
