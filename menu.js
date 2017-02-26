@@ -154,6 +154,8 @@ function makeOrder(){
 			}
     });
 	
+	changePage('confirmation');
+	
 }
 
   
