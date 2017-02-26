@@ -151,7 +151,7 @@ function makeOrder(){
 }
 
   
-$("#finalconfirm").click(makeOrder);
+$("#finalconfirm").click(storeInput);
 
 <!--Saves user input into a string object-->
 function storeInput(order){
