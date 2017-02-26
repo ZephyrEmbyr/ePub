@@ -153,3 +153,14 @@ function storeInput(order){
     var name = txtName.value;
     
   } // end storeName
+
+
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,9 @@ function storeInput(){
     var bowId = txtBowId.value;
     var name = txtName.value;
     
+    //function call to get an array of items in the order
+    itmes[] = getItem();
+    
     var newOrder = new Order(name, bowId, items);
     //editObject(name, bowId);
   } // end storeName
@@ -24,7 +27,6 @@ function addName(x){
 function addId(y){
     object.id=y;
 }
-
 
 
 function Order(name, id, items){
