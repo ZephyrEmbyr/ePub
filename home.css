@@ -9,8 +9,9 @@ html {
 body {
     /*background-color: black;*/
     background-image: url("burger.png");
-    background-size: 1500px;
+    background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
@@ -71,10 +72,13 @@ h1 {
     margin-left: 0;
 }
 
-.collapse.in {
-    display: block;
+.collapse, .collapsing {
     background-color: white;
     opacity: .9;
+}
+.collapse.in {
+    
+    display: block;
 }
 
 .panel-heading {
@@ -153,7 +157,11 @@ img {
 p {
     margin: 0;
 }
-
+.box {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
 .footer {
   position: absolute;
   bottom: 0;

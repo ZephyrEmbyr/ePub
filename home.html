@@ -9,6 +9,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jack Magee ePub</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="home.css">
     </head>
@@ -88,7 +89,7 @@
                 <div class="row">
                     <div class="col-sm-6" align= "center">
                         <button data-toggle="collapse" class="btn btn-default btn-lg"  id="submenu-header" data-target="#appetizer">Appetizers</button>
-                        <div id="appetizer" class="collapse" align= "left">
+                        <div id="appetizer" class="collapse box" align= "left" >
                             <input type="checkbox" id="a1" value="app1"> Small Garlic-Herb Breadsticks with Marinara Sauce<br>
                             <input type="checkbox" id="a2" value="app2"> Large Garlic-Herb Breadsticks with Marinara Sauce<br>
                             <input type="checkbox" id="a3" value="app3"> Small Cheese Breadsticks with Marinara Sauce<br>
@@ -111,7 +112,7 @@
                     </div>
                     <div class="col-sm-6" align= "center">
                         <button data-toggle="collapse" class="btn btn-default btn-lg" id="submenu-header"  data-target="#sandwich">Sandwiches</button>
-                        <div id="sandwich" class="collapse" align= "left">
+                        <div id="sandwich" class="collapse box" align= "left">
                             <input type="checkbox" id="sw1" value="san1"> Jack’s Deli Sandwich<br>
                             <input type="checkbox" id="sw2" value="san2"> Jack’s Double-Decker Turkey Club<br>
                             <input type="checkbox" id="sw3" value="san3"> BLT Sandwich<br>
@@ -138,7 +139,7 @@
                     <div class="row">
                         <div class="col-sm-6" align= "center">
                             <button data-toggle="collapse" class="btn btn-default btn-lg" id="submenu-header"data-target="#salad">Salads</button>
-                            <div id="salad" class="collapse" align= "left">
+                            <div id="salad" class="collapse box" align= "left">
                                 <input type="checkbox" id="s1" value="sal1"> Kale Salad <br>
                                 <input type="checkbox" id="s2" value="sal2"> Cobb Salad <br>
                                 <input type="checkbox" id="s3" value="sal3"> Small Magee's Garden Salad <br>
@@ -151,7 +152,7 @@
                         </div>
                     <div class="col-sm-6" align= "center">
                         <button data-toggle="collapse" class="btn btn-default btn-lg" id="submenu-header" data-target="#panini">Panini, Baskets, and More</button>
-                        <div id="panini" class="collapse" align= "left">
+                        <div id="panini" class="collapse box" align= "left">
                             <input type="checkbox" id="p1" value="pan1"> Chicken Pesto Panino <br>
                             <input type="checkbox" id="p2" value="pan2"> Portobello and Goat Cheese Panino <br>
                             <input type="checkbox" id="p3" value="pan3"> Homemade Meatloaf and Cheddar Panino <br>
@@ -165,7 +166,7 @@
                 <div class="row">
                     <div class="col-sm-6" align= "center">
                         <button data-toggle="collapse" class="btn btn-default btn-lg" id="submenu-header" data-target="#burrito">Burritos and Wraps</button>
-                        <div id="burrito" class="collapse" align= "left">
+                        <div id="burrito" class="collapse box" align= "left">
                             <input type="checkbox" id="b1" value="bur1"> Fish Taco <br>
                             <input type="checkbox" id="b2" value="bur2"> Burrito “El Grande” <br>
                             <input type="checkbox" id="b3" value="bur3"> Chicken Caesar Wrap <br>
@@ -176,7 +177,7 @@
                     </div>
                     <div class="col-sm-6" align= "center">
                         <button data-toggle="collapse" class="btn btn-default btn-lg" id="submenu-header" data-target="#side">Side Orders</button>
-                        <div id="side" class="collapse" align= "left">
+                        <div id="side" class="collapse box" align= "left">
                             <input type="checkbox" id="si1" value="sid1"> Cobb Salad Wrap<br>
                             <input type="checkbox" id="si2" value="sid2"> Small French Fries<br>
                             <input type="checkbox" id="si3" value="sid3"> Large French Fries<br>
@@ -240,18 +241,47 @@
         
         
         <div id = "about">
-            <div class="col-sm-6" align= "right">
+            
+            <div class="col-sm-6" align= "left" style="margin-left:30px; margin-right:30px">
+                <h1 style="weight=bold;">
+                    Hours
+                </h1>
+                <h3 style="font-family: 'courier new', monospace;">
+                    Grill Hours
+                </h3>
+                <p style="font-family: 'courier new', monospace;">
+                    Monday - Wednesday Open 11:30 a.m. - midnight<br>
+                    Thursday Open 11:30 a.m. - 1:00 a.m.<br>
+                    Friday Open 11:30 a.m. - 7:00 p.m.<br>
+                    Saturday Closed<br>
+                    Sunday Open 6:30 p.m. - midnight<br>
+                </p>
+                
+                <h3 style="font-family: 'courier new', monospace;">
+                    Pub Hours
+                </h3>
+                <p style="font-family: 'courier new', monospace;">
+                    Thursday Open 8:30 p.m. - 1:00 a.m.<br> 
+                    Friday Open 6:00 p.m. - 10:00 p.m.<br> 
+                    Saturday Open 6:00 p.m. - 10:00 p.m.<br> 
+                    Sunday - Wednesday Closed<br>
+                </p>
+            </div>
+            
+            <div class="col-sm-6" align= "left" style="margin-left:10px; margin-right:10px">
                 <div>
-                    <h1 style="weight=bold; align=right;">Hours</h1> 
+                    <h1 style="weight=bold;">Contact Us</h1> 
+                    <p style="font-family: 'courier new', monospace;">
+                    Telephone: 207-725-3888<br>
+                    Email: 
+                    </p>
                 </div>
-                
+            </div> 
+            
+            <div class="col-sm-6" align= "left" style="margin-left:10px; margin-right:10px">
+                <button id="llbean_stores" class="btn btn-primary"> check the weather!</button>
             </div>
-                <h1 style="bold;">
-                    Contact Us
-                </h1> 
-            <div class="col-sm-6" align= "left">
-                
-            </div>
+        
         </div> <!--end of about us page-->
             
             

@@ -134,6 +134,27 @@ function navActive(page){
 }
 
 
+$("#llbean_stores").click(function() {    
+    var URL = 'https://api.llbean.com/v1/stores/storeType?sortBy=city%2C%20jursidiction&location=43.85795%2C-70.10332&locationid=ChIJ1esxKIZ7wokRFTkePKJbt4U&postalcode=04032&city=Freeport&jurisdiction=ME&range=100&expand=details&allStores=true';
+    
+    $.ajax({
+        url: URL,
+        type: 'GET',
+        dataType: 'json',
+        headers: {
+            key: "7mA63UVIcmCt2GC1a8eryqVKgOVUGNyi=="
+        },
+        contentType: 'application/json; charset=utf-8',
+        success: function (result) {
+           // CallBack(result);
+            console.log(data);
+        },
+        error: function (error) {
+
+        }
+    });
+});
+
 $("#confirmation_one").click(makeOrder);
 
 function makeOrder(){
