@@ -41,32 +41,30 @@
         
         <div id="home">
             <!--logo-->
-            <!--
             <a>
-                <img alt="Jack Magee Logo" src="jack_magee.jpg" style="width:100%;height:228px;"/>
+                <img alt="Jack Magee Logo" src="jackmageelogo.png" style="width:100%;height:228px;"/>
             </a>
-            -->
             <!--make order-->
             <div> 
-                <div> <br/> </div>
                 <button type="button"  class="btn btn-default btn-lg" id="btn_transparent" onclick="changePage('menu')" style="display:block; line-height: 40px; width:40%; text-align:center; margin:0 auto;"> ORDER NOW </button> 
                 <div> <br/> <br/> </div>
             </div>
              <!-- Ready Orders List -->
+            
             <div class="container">
               <div class="row">
+                  <center>
                   <div class="panel panel-default">
-                    <div class="panel-heading">
+                    <div class="panel-heading"> 
                       <h4>
                         Please come and pick up your order! 
                       </h4>
                     </div>
-                    <table class="table table-fixed">
+                    <table class="table table-fixed" style="text-align: left;">
                       <thead>
                         <tr>
-                          <th class="col-xs-2">#</th>
-                          <th class="col-xs-4">Name</th>
-                          <th class="col-xs-6">Order Summary</th>
+                          <th class="col-xs-5">Name</th>
+                          <th class="col-xs-7">Order Summary</th>
                         </tr>
                       </thead>
                       <tbody id="orderList" class="">
@@ -74,6 +72,7 @@
                       </tbody>
                     </table>
                   </div>
+                  </center>
               </div>
             </div>
         </div> <!-- end of home page-->
@@ -267,9 +266,8 @@
             orders.forEach(function(item) {
                 $('#orderList').append(`
                     <tr>
-                        <td class="col-xs-2">${item.id}</td>
-                        <td class="col-xs-4">${item.name}</td>
-                        <td class="col-xs-6">${item.order}</td>
+                        <td class="col-xs-5">${item.name}</td>
+                        <td class="col-xs-7">${item.order}</td>
                     </tr>
                 `);
             });
