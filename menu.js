@@ -142,7 +142,7 @@ function makeOrder(){
     $('input[type=checkbox]').each(function () {
         if ($(this).is(':checked'))
 			{
-				stuff.push(this);
+				stuff.push(menu.type=$(this).attr('id'));
 			}
     });
 	
