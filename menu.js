@@ -111,6 +111,14 @@ function navActive(page){
     
     for(i=0; i<navBar.length; i++) {
         var a = navBar[i].innerText;
+        
+        if( $("li").hasClass( "active" )){
+          $( "#specificDiv" ).addClass( "text" );
+        } else {
+            $( "#specificDiv" ).removeClass("text");
+        }
+        
+        
         if(navBar[i].innerText.toLocaleLowerCase() == page) {
             navBar[i].classList.add("active");
         } else {
