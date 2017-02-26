@@ -214,8 +214,8 @@
         
         
         <div id= "confirmation">
-            <h1>Confirm your order</h1>
-            <form class="well span9">
+            <h1 style="padding-left: 50px; padding-top: 10px; weight:bold;">Confirm your order</h1>
+            <form class="well span9" style="opacity: 0.85;">
             <div class="row">
                 <div class="span3">
                     <label>What's your name?</label>
@@ -243,7 +243,7 @@
         
         
         <div id = "about">
-            <p>about_us page</p>
+            <p></p>
         </div> <!--end of about us page-->
             
             
@@ -255,19 +255,9 @@
             <p> Store Hours: Mon - Wed 11:30 a.m. - midnight, Thurs 11:30am - 1:00am, Fri 11:30am - 7:00pm, Sat Closed, Sun 6:30pm - midnight</p>
         </footer>
         
-        <script src="menu.js"></script>
+        <!--<script src="menu.js"></script>-->
+        
         <script>
-            var orders = [ 
-                { id: 2, name: "Tom", order: "Chicken tender", price: "" }, 
-                { id: 1, name: "Alice", order: "Salad", price: "" },
-                { id: 1, name: "Kevin", order: "Burger", price: "" }, 
-                { id: 1, name: "Alice", order: "Salad", price: "" },
-                { id: 1, name: "Alice", order: "Salad", price: "" },
-                { id: 1, name: "Alice", order: "Salad", price: "" },
-                { id: 1, name: "Alice", order: "Salad", price: "" },
-                { id: 1, name: "Alice", order: "Salad", price: "" }
-            ];
-            
             orders.forEach(function(item) {
                 $('#orderList').append(`
                     <tr>
