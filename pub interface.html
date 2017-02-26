@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   
+   
+   <head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <title>Jack Magee ePub</title>
+       <meta name="pub interface" content="An interface for pub manager to see all the orders">
+       <link rel="stylesheet" href="home.css">
+   </head>
+   
+   <body>
+     
+       <!-- jQuery library -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+       <!-- Latest compiled JavaScript -->
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+       <script src = "menu.js"></script>
+       
+       
+   <div id="home">
+           <!--logo-->
+           <a>
+               <img alt="Jack Magee Logo" src="jackmageelogo.png" style="width:100%;height:228px;"/>
+           </a>
+           <!--make order-->
+   </div>
+   
+   <footer class="footer">
+           <p> Telephone: 207-725-3888 </p>
+           <p> Store Hours: Mon - Wed 11:30 a.m. - midnight, Thurs 11:30am - 1:00am, Fri 11:30am - 7:00pm, Sat Closed, Sun 6:30pm - midnight</p>
+       </footer>
+       
+       <div class="container">
+             <div class="row">
+                 <div class="panel panel-default">
+                   <div class="panel-heading">
+                     <h4>
+                       Please confirm orders that are ready!
+                     </h4>
+                   </div>
+                   <table class="table table-fixed">
+                     <thead>
+                       <tr>
+                         <th class="col-xs-3">Time</th>
+                         <th class="col-xs-3">ID</th>
+                         <th class="col-xs-3">Order Summary</th>
+                         <th class="col-xs-3">Ready</th>
+                       </tr>
+                     </thead>
+                     <tbody id="orderList" class="">
+
+                     </tbody>
+                   </table>
+                 </div>
+             </div>
+           </div>
+       
+       <script>
+           var orders = [
+               { time: "20:23:31", id: "B8023", name: "Tom", order: "Chicken Tender", price: ""},
+               { time: "20:30:09", id: "B9385", name: "Alice", order: "Salad", price: ""},
+               { time: "20:31:47", id: "B7163", name: "Kevin", order: "Burger", price: ""},
+               { time: "20:40:03", id: "B7213", name: "Alice", order: "Fish Taco", price: ""},
+               { time: "20:41:02", id: "B9470", name: "John", order: "Salad", price: ""},
+               { time: "20:42:30", id: "B7004", name: "Darius", order: "Sandwich", price: ""},
+               { time: "20:47:50", id: "B8310", name: "Tim", order: "Salad", price: ""},
+               { time: "20:55:34", id: "B9101", name: "Joy", order: "Burger", price: ""}
+           ];
+           orders.forEach(function(item) {
+               $('#orderList').append(`
+                   <tr>
+                       <td class="col-xs-3">${item.time}</td>
+                       <td class="col-xs-3">${item.id}</td>
+                       <td class="col-xs-3">${item.order}</td>
+                       <td class="col-xs-3"><button>Ready</button></td>
+                   </tr>
+               `);
+           });
+       </script>
+       
+       
+       
+   </body>
+</html>
