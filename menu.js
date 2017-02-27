@@ -1,5 +1,26 @@
 
 
+	var request = new XMLHttpRequest();
+
+request.open('GET', 'https://api.llbean.com/v1/weather/forecast?location=&postalcode=');
+
+request.setRequestHeader('key', 'yourapplicationkey==');
+
+request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+    console.log('Status:', this.status);
+    console.log('Headers:', this.getAllResponseHeaders());
+    console.log('Body:', this.responseText);
+  }
+};
+
+request.send();
+
+
+
+
+
+
 	var stuff = [];
 	var orders = [];
     var menu = [
